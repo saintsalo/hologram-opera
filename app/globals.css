@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2e2e2e;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Big Shoulders Display", Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+@layer utilities {
+  h1 {
+    @apply text-[100px];
+  }
+  h2 {
+    @apply text-6xl;
+  }
+  h3 {
+    @apply text-5xl;
+  }
+  h4 {
+    @apply text-4xl;
+  }
+  h5 {
+    @apply text-3xl;
+  }
+  h6 {
+    @apply text-2xl;
+  }
+}
