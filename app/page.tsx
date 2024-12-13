@@ -97,6 +97,7 @@ export default function Home() {
           image={{ data: hgt, name: "Hello from image" }}
           date="2022-01-01"
           title="Hologram Teen"
+          eventDate
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua.

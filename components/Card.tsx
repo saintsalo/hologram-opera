@@ -4,6 +4,7 @@ import Link from "next/link"
 type CardType = {
   thumbnail?: string
   date?: string
+  eventDate?: boolean
   title?: string
   children: React.ReactNode
   callToActionText?: string
@@ -17,12 +18,26 @@ type ImageMetaData = {
   caption?: string
 }
 
-const Card = ({ date, title, children, callToActionText, calllToActionLink, image }: CardType) => {
+const Card = ({
+  date,
+  title,
+  children,
+  callToActionText,
+  calllToActionLink,
+  image,
+  eventDate = false,
+}: CardType) => {
   return (
     <div className="max-w-xl h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
       <Link href={calllToActionLink}>
         <article className="w-full h-full">
-          <figure className="border-black border-b-2">
+          <figure className="border-black border-b-2 relative">
+            {eventDate && (
+              <div className="aspect-square w-16 h-16 absolute top-0 right-0 m-4 bg-white hover:bg-black hover:text-white hover:border-white border-2 border-black shadow-xl text-lg  flex flex-col justify-center text-center rounded-sm">
+                <div className="leading-5">DEC</div>
+                <div className="leading-5 text-xl font-bold">23</div>
+              </div>
+            )}
             {image && (
               <Image
                 src={image.data}
