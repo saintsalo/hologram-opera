@@ -41,3 +41,21 @@ body {
     @apply text-2xl;
   }
 }
+
+@layer components {
+  .focus {
+    @apply opacity-80 hover:opacity-100 transition-all;
+  }
+
+  .bandcamp {
+    @apply text-[#1F9FC2];
+  }
+
+  .soundcloud {
+    @apply text-[#FF7400];
+  }
+
+  .instagram {
+    @apply text-[#E4405F];
+  }
+}

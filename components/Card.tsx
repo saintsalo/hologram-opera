@@ -55,7 +55,7 @@ const Card = ({
             {date && <p className="text-base mb-4">{date}</p>}
             {title && <h1 className="text-[32px] leading-8 font-bold mb-4">{title}</h1>}
 
-            <p className="mb-4 line-clamp-2 lg:line-clamp-4">{children}</p>
+            <p className="mb-4 line-clamp-2 lg:line-clamp-4 text-[20px] leading-6">{children}</p>
 
             {callToActionText && <strong>{callToActionText}</strong>}
           </div>

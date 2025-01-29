@@ -1,117 +1,124 @@
-import Button from "@/components/Button"
-import Card from "@/components/Card"
-import Input from "@/components/Input"
-import hgt from "@/assets/images/ht-dgo.jpg"
+import hgt from "@/assets/images/morgane-lhote-profile.jpg"
 import hsoh from "@/assets/images/hsoh.png"
-import Checkbox from "@/components/Checkbox"
-import DropDown from "@/components/DropDown"
+import Image from "next/image"
+import { FaBandcamp, FaInstagram, FaSoundcloud } from "react-icons/fa"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="p-8 flex flex-col flex-wrap gap-8">
-        <div>
-          <Input placeholder="Enter text here" focusColor="violet" rounded="md" />
-        </div>
-        <div>
-          <Input
-            placeholder="Another input"
-            focusColor="pink"
-            rounded="full"
-            className="custom-input-class"
-          />
-        </div>
-      </div>
+    <div className="flex flex-col gap-8 w-full items-center justify-center">
+      <div className="w-full p-8 flex lg:flex-col flex-wrap gap-8 items-center justify-center">
+        <h4 className="w-full">Artists</h4>
 
-      <div className="p-8 flex flex-row flex-wrap gap-8 w-full">
-        <DropDown
-          title="Select an option"
-          color="none"
-          list={[
-            { to: "/path/1", name: "Option 1" },
-            { to: "/path/2", name: "Option 2" },
-            { to: "/path/3", name: "Option 3" },
-            { to: "/path/4", name: "Option 4" },
-            { to: "/path/5", name: "Option 5" },
-          ]}
-        />
-      </div>
+        <div className="grid grid-cols-3 gap-8 items-start w-full">
+          <div className="border-8 border-black p-4 bg-gray-50 rounded">
+            <Image src={hgt} alt="Morgane Lhote" className="rounded-md" />
+          </div>
+          <div className=" bg-gray-50 p-4 col-span-2">
+            <div className="flex flex-row w-full justify-between pb-8">
+              <h3 className="pr-4">Hologram Teen</h3>
+              <div className="flex flex-row gap-4">
+                <a
+                  href="https://hologramteen.bandcamp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="focus bandcamp"
+                >
+                  <FaBandcamp />
+                </a>
 
-      <div className="p-8 flex flex-row flex-wrap gap-8 w-full">
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="pink" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="violet" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="pink" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="red" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="orange" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="yellow" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="lime" /> Checkbox 1
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <Checkbox color="cyan" /> Checkbox 1
-        </div>
-      </div>
+                <a
+                  href="https://soundcloud.com/hologramteen"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="focus soundcloud"
+                >
+                  <FaSoundcloud />
+                </a>
 
-      <div className="p-8 flex flex-row flex-wrap gap-8">
-        <div>
-          <Button buttonText="Cyan Button" color="cyan" />
+                <a
+                  href="https://www.instagram.com/hologram_teen/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="focus instagram"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+            </div>
+            Hologram Teen is the solo project (and anagram) of former Stereolab keyboardist Morgane
+            Lhote. Her colorful, playful songs are heavily influenced by horror movie soundtracks
+            and Italo disco, as well as instrumental hip-hop. Initially from Paris, Morgane moved to
+            London when she was 20, spent nearly a decade in New York City, and relocated to Los
+            Angeles where she concentrated on her solo material. Hologram Teen's 4th LP “Captain
+            Fluo” drops on Hologram Opera in the Summer of 2025. A neon odyssey through the
+            underground Paris of the 1980s, “Captain Fluo” mixes disco, new wave, French pop, and
+            vocals with heavy European accents. Just like crashing a Plastic Bertrand aerobics
+            class, it's chaotic, sweaty and endlessly catchy.
+          </div>
         </div>
-        <div>
-          <Button buttonText="Small Violet Button" color="violet" size="sm" />
-        </div>
-        <div>
-          <Button buttonText="Medium Pink Button" color="pink" size="md" />
-        </div>
-        <div>
-          <Button buttonText="Large Red Button" color="red" size="lg" />
-        </div>
-        <div>
-          <Button buttonText="Rounded Orange Button" color="orange" rounded="md" />
-        </div>
-        <div>
-          <Button buttonText="Full Rounded Yellow Button" color="yellow" rounded="full" />
-        </div>
-        <div>
-          <Button buttonText="Disabled Lime Button" color="lime" disabled />
-        </div>
-        <div>
-          <Button buttonText="Custom Class Cyan Button" color="cyan" className="custom-class" />
-        </div>
-      </div>
 
-      <div className="w-full bg-red-200 p-8 flex lg:flex-row flex-wrap gap-8">
-        <Card
-          calllToActionLink="/card"
-          image={{ data: hgt, name: "Hello from image" }}
-          date="2022-01-01"
-          title="Hologram Teen"
-          eventDate
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
-        </Card>
-        <Card
-          calllToActionLink="/card"
-          image={{ data: hsoh, name: "Hello from image" }}
-          date="2022-01-01"
-          title="Holy Sun Opera House"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua.
-        </Card>
+        <div className="grid grid-cols-3 gap-8 items-start">
+          <div className="border-8 border-black p-4 bg-gray-50 rounded">
+            <Image src={hsoh} alt="Holy Sun Opera House" className="rounded-md w-full" />
+          </div>
+          <div className=" bg-gray-50 p-4 col-span-2">
+            <div className="flex flex-row w-full justify-between pb-8">
+              <h3 className="pr-4">Holy Sun Opera House</h3>
+              <div className="flex flex-row gap-4">
+                <a
+                  href="https://holysunoperahouse.bandcamp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="focus bandcamp"
+                >
+                  <FaBandcamp />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/holy_sun_opera_house/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="focus instagram"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+            </div>
+            Holy Sun Opera House is classically trained soprano and drummer Krissy Barker and
+            composer dl Salo. Together they weave symphonic synths and operatic vocals with heavy
+            drums. Their music evokes joy, terror, anger, love, and grief in a dreamlike fashion.
+            The band has been described as one that would play the Roadhouse in Twin Peaks.
+          </div>
+        </div>
       </div>
     </div>
   )
 }
+
+/* <Card
+            calllToActionLink="/card"
+            image={{ data: hgt, name: "Hello from image" }}
+            // date="2022-01-01"
+            title="Hologram Teen"
+          >
+            Hologram Teen is the solo project (and anagram) of former Stereolab keyboardist Morgane
+            Lhote. Her colorful, playful songs are heavily influenced by horror movie soundtracks
+            and Italo disco, as well as instrumental hip-hop. Initially from Paris, Morgane moved to
+            London when she was 20, spent nearly a decade in New York City, and relocated to Los
+            Angeles where she concentrated on her solo material. Hologram Teen's 4th LP “Captain
+            Fluo” drops on Hologram Opera in the Summer of 2025. A neon odyssey through the
+            underground Paris of the 1980s, “Captain Fluo” mixes disco, new wave, French pop, and
+            vocals with heavy European accents. Just like crashing a Plastic Bertrand aerobics
+            class, it's chaotic, sweaty and endlessly catchy.
+          </Card>
+          <Card
+            calllToActionLink="/card"
+            image={{ data: hsoh, name: "Hello from image" }}
+            // date="2022-01-01"
+            title="Holy Sun Opera House"
+          >
+            Holy Sun Opera House is classically trained soprano and drummer Krissy Barker and
+            composer dl Salo. Together they weave symphonic synths and operatic vocals with heavy
+            drums. Their music evokes joy, terror, anger, love, and grief in a dreamlike fashion.
+            The band has been described as one that would play the Roadhouse in Twin Peaks.
+          </Card> */
