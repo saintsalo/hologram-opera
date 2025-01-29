@@ -45,15 +45,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            Hologram Teen is the solo project (and anagram) of former Stereolab keyboardist Morgane
-            Lhote. Her colorful, playful songs are heavily influenced by horror movie soundtracks
-            and Italo disco, as well as instrumental hip-hop. Initially from Paris, Morgane moved to
-            London when she was 20, spent nearly a decade in New York City, and relocated to Los
-            Angeles where she concentrated on her solo material. Hologram Teen's 4th LP “Captain
-            Fluo” drops on Hologram Opera in the Summer of 2025. A neon odyssey through the
-            underground Paris of the 1980s, “Captain Fluo” mixes disco, new wave, French pop, and
-            vocals with heavy European accents. Just like crashing a Plastic Bertrand aerobics
-            class, it's chaotic, sweaty and endlessly catchy.
+            Hologram Teen&apos;s 4th LP &quot;Captain Fluo&quot; drops on Hologram Opera in the
+            Summer of 2025. A neon odyssey through the underground Paris of the 1980s, &quot;Captain
+            Fluo&quot; mixes disco, new wave, French pop, and vocals with heavy European accents.
+            Just like crashing a Plastic Bertrand aerobics class, it&apos;s chaotic, sweaty and
+            endlessly catchy.
           </div>
         </div>
 
@@ -94,31 +90,3 @@ export default function Home() {
     </div>
   )
 }
-
-/* <Card
-            calllToActionLink="/card"
-            image={{ data: hgt, name: "Hello from image" }}
-            // date="2022-01-01"
-            title="Hologram Teen"
-          >
-            Hologram Teen is the solo project (and anagram) of former Stereolab keyboardist Morgane
-            Lhote. Her colorful, playful songs are heavily influenced by horror movie soundtracks
-            and Italo disco, as well as instrumental hip-hop. Initially from Paris, Morgane moved to
-            London when she was 20, spent nearly a decade in New York City, and relocated to Los
-            Angeles where she concentrated on her solo material. Hologram Teen's 4th LP “Captain
-            Fluo” drops on Hologram Opera in the Summer of 2025. A neon odyssey through the
-            underground Paris of the 1980s, “Captain Fluo” mixes disco, new wave, French pop, and
-            vocals with heavy European accents. Just like crashing a Plastic Bertrand aerobics
-            class, it's chaotic, sweaty and endlessly catchy.
-          </Card>
-          <Card
-            calllToActionLink="/card"
-            image={{ data: hsoh, name: "Hello from image" }}
-            // date="2022-01-01"
-            title="Holy Sun Opera House"
-          >
-            Holy Sun Opera House is classically trained soprano and drummer Krissy Barker and
-            composer dl Salo. Together they weave symphonic synths and operatic vocals with heavy
-            drums. Their music evokes joy, terror, anger, love, and grief in a dreamlike fashion.
-            The band has been described as one that would play the Roadhouse in Twin Peaks.
-          </Card> */
