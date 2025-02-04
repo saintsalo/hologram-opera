@@ -25,7 +25,7 @@ const Newsletter: React.FC = () => {
   }, [])
 
   return (
-    <div className="w-[800px] p-8 flex flex-col gap-8 items-center justify-center ">
+    <div className="w-[400px] p-8 flex flex-col gap-8 items-center justify-center ">
       <h4>Signup for our Newsletter!</h4>
       <div className="w-full" id="hubspotForm"></div>
     </div>
