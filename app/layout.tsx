@@ -17,7 +17,8 @@ const bigShouldersDisplay = Big_Shoulders_Display({
 
 export const metadata: Metadata = {
   title: "Hologram Opera",
-  description: "Holgram Opera is a record label based in Los Angeles, California.",
+  description:
+    "Hologram Opera is a record label from the future run by artists Morgan Lhote, Krissy Barker and dl Salo with a lust for creating art and creating spreadsheets.",
 }
 
 export default function RootLayout({
