@@ -18,7 +18,7 @@ const bigShouldersDisplay = Big_Shoulders_Display({
 export const metadata: Metadata = {
   title: "Hologram Opera",
   description:
-    "Hologram Opera is a record label from the future run by artists Morgan Lhote, Krissy Barker and dl Salo with a lust for creating art and creating spreadsheets.",
+    "Hologram Opera is a record label from the future run by artists Morgane Lhote, Krissy Barker and dl Salo with a lust for creating art and creating spreadsheets.",
 }
 
 export default function RootLayout({
