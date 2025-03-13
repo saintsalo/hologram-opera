@@ -1,5 +1,5 @@
 import React from "react"
-import { RiInstagramFill, RiMastodonFill } from "react-icons/ri"
+import { RiInstagramFill, RiMastodonFill, RiYoutubeFill } from "react-icons/ri"
 
 const Footer: React.FC = () => {
   return (
@@ -9,6 +9,9 @@ const Footer: React.FC = () => {
       </a>
       <a rel="me" href="https://mastodon.social/@hologramopera" target="_blank">
         <RiMastodonFill className="text-4xl" />
+      </a>
+      <a href="https://www.youtube.com/@HologramOpera" target="_blank" rel="noreferrer">
+        <RiYoutubeFill className="text-4xl" />
       </a>
     </div>
   )

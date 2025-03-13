@@ -30,10 +30,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bigShouldersDisplay.variable} ${geistMono.variable} antialiased`}>
         <Header />
+        <div className="mx-auto max-w-screen-xl">{children}</div>
         <div className="items-center justify-center p-8 bg-gray-50 min-w-[200px] flex flex-col">
           <Newsletter />
         </div>
-        <div className="mx-auto max-w-screen-xl">{children}</div>
 
         <div className="items-center justify-center flex flex-col gap-4 w-full py-16 bg-black text-white">
           <Footer />

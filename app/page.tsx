@@ -1,11 +1,55 @@
-import hgt from "@/assets/images/morgane-lhote-profile.jpg"
+import hgt from "@/assets/images/morgane-lhote-shot.png"
 import hsoh from "@/assets/images/hsoh.png"
 import Image from "next/image"
-import { FaBandcamp, FaInstagram, FaSoundcloud } from "react-icons/fa"
+import { FaBandcamp, FaInstagram, FaSoundcloud, FaSpotify } from "react-icons/fa"
+import YoutubeEmbed from "@/components/YoutubeEmbed"
+import Card from "@/components/Card"
+import { RiYoutubeFill } from "react-icons/ri"
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-8 w-full items-center justify-center">
+    <div className="flex flex-col gap-8 w-full items-center justify-center p-8">
+      <Card
+        // calllToActionLink="https://hologramteen.bandcamp.com/track/connection-transpacifique"
+        title="Connection transpacifique 🪩"
+        date="03/07/2025"
+        variant="release"
+      >
+        <p className="mb-4">Connection transpacifique is the new single by Hologram Teen</p>
+        <div className="flex flex-col gap-8 mt-8">
+          <div>
+            <h5 className="flex flex-row gap-2 items-center mb-4">
+              <FaBandcamp /> Bandcamp
+            </h5>
+            <iframe
+              style={{ width: "350px", height: "442px" }}
+              className="border-4 border-white rounded"
+              src="https://bandcamp.com/EmbeddedPlayer/track=1584144519/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/"
+              seamless
+            >
+              <a href="https://hologramteen.bandcamp.com/track/connection-transpacifique">
+                Connection transpacifique by Hologram Teen
+              </a>
+            </iframe>
+          </div>
+          <div>
+            <h5 className="flex flex-row gap-2 items-center mb-4">
+              <RiYoutubeFill /> Youtube
+            </h5>
+            <YoutubeEmbed embedId="Z42SAeKg8dA?si=cJdxrR52cMyy74aG" />
+          </div>
+          <div>
+            <a
+              href="https://open.spotify.com/album/4OVeIqkruiWR7tFaL1QgKP?si=EaJUEQiSR-eraxoTcuaYFA"
+              target="_blank"
+            >
+              <h5 className="flex flex-row gap-2 items-center mb-4">
+                <FaSpotify /> Spotify
+              </h5>
+            </a>
+          </div>
+        </div>
+      </Card>
       <div className="w-full p-8 flex lg:flex-col flex-wrap gap-8 items-center justify-center">
         <h4 className="w-full">Artists</h4>
 
