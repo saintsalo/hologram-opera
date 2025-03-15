@@ -1,5 +1,6 @@
 import hgt from "@/assets/images/morgane-lhote-shot.png"
 import hsoh from "@/assets/images/hsoh.png"
+import ct from "@/assets/images/connection-transpacifique.png"
 import Image from "next/image"
 import { FaBandcamp, FaInstagram, FaSoundcloud, FaSpotify } from "react-icons/fa"
 import YoutubeEmbed from "@/components/YoutubeEmbed"
@@ -14,39 +15,73 @@ export default function Home() {
         title="Connection transpacifique 🪩"
         date="03/07/2025"
         variant="release"
+        image={ct}
       >
         <p className="mb-4">Connection transpacifique is the new single by Hologram Teen</p>
+        <p className="mb-4 flex flex-row gap-4 items-center">
+          <a
+            href="https://hologramteen.bandcamp.com/track/connection-transpacifique"
+            target="_blank"
+            className="flex flex-row gap-1 items-center mb-4"
+          >
+            <FaBandcamp /> <span>Bandcamp</span>
+          </a>
+          <a
+            href="https://open.spotify.com/album/4OVeIqkruiWR7tFaL1QgKP?si=EaJUEQiSR-eraxoTcuaYFA"
+            target="_blank"
+            className="flex flex-row gap-1 items-center mb-4"
+          >
+            <FaSpotify /> <span>Spotify</span>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=Z42SAeKg8dA"
+            target="_blank"
+            className="flex flex-row gap-1 items-center mb-4"
+          >
+            <RiYoutubeFill /> <span>YouTube</span>
+          </a>
+        </p>
         <div className="flex flex-col gap-8 mt-8">
           <div>
-            <h5 className="flex flex-row gap-2 items-center mb-4">
+            {/* <h5 className="flex flex-row gap-2 items-center mb-4">
               <FaBandcamp /> Bandcamp
-            </h5>
+            </h5> */}
             <iframe
-              style={{ width: "350px", height: "442px" }}
-              className="border-4 border-white rounded"
-              src="https://bandcamp.com/EmbeddedPlayer/track=1584144519/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/"
+              style={{ border: 0, width: "100%", height: "42px" }}
+              className="block md:hidden"
+              src="https://bandcamp.com/EmbeddedPlayer/track=1584144519/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
               seamless
             >
               <a href="https://hologramteen.bandcamp.com/track/connection-transpacifique">
                 Connection transpacifique by Hologram Teen
               </a>
             </iframe>
-          </div>
-          <div>
-            <h5 className="flex flex-row gap-2 items-center mb-4">
-              <RiYoutubeFill /> Youtube
-            </h5>
-            <YoutubeEmbed embedId="Z42SAeKg8dA?si=cJdxrR52cMyy74aG" />
-          </div>
-          <div>
-            <a
-              href="https://open.spotify.com/album/4OVeIqkruiWR7tFaL1QgKP?si=EaJUEQiSR-eraxoTcuaYFA"
-              target="_blank"
+            <iframe
+              style={{ border: 0, width: "100%", height: "120px" }}
+              className="border-4 border-white rounded hidden md:block"
+              src="https://bandcamp.com/EmbeddedPlayer/track=1584144519/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/artwork=small/transparent=true/"
+              seamless
             >
-              <h5 className="flex flex-row gap-2 items-center mb-4">
-                <FaSpotify /> Spotify
-              </h5>
-            </a>
+              <a href="https://hologramteen.bandcamp.com/track/connection-transpacifique">
+                Connection transpacifique by Hologram Teen
+              </a>
+            </iframe>
+            {/* <iframe
+              style={{ width: "350px", height: "442px" }}
+              className="border-4 border-white rounded hidden md:block"
+              src="https://bandcamp.com/EmbeddedPlayer/track=1584144519/size=large/bgcol=ffffff/linkcol=f171a2/tracklist=false/transparent=true/"
+              seamless
+            >
+              <a href="https://hologramteen.bandcamp.com/track/connection-transpacifique">
+                Connection transpacifique by Hologram Teen
+              </a>
+            </iframe> */}
+          </div>
+          <div>
+            {/* <h5 className="flex flex-row gap-2 items-center mb-4">
+              <RiYoutubeFill /> Youtube
+            </h5> */}
+            <YoutubeEmbed embedId="Z42SAeKg8dA?si=cJdxrR52cMyy74aG" />
           </div>
         </div>
       </Card>

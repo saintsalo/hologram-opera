@@ -11,7 +11,7 @@ type CardType = {
   children: React.ReactNode
   callToActionText?: string
   calllToActionLink?: string
-  image?: ImageMetaData
+  image?: ImageMetaData | StaticImageData
   variant?: "default" | "event" | "artist" | "release"
 }
 
@@ -42,8 +42,8 @@ const Card = ({
         )}
         {image && (
           <Image
-            src={image.data}
-            alt={`${image.name}`}
+            src={"data" in image ? image.data : image}
+            alt={"data" in image ? image.name : ""}
             sizes="100vw"
             className="object-cover"
             style={{
