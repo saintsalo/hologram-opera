@@ -53,7 +53,7 @@ const Card = ({
           />
         )}
       </figure>
-      <div className="px-6 py-5 text-left h-full">
+      <div className="px-6 py-5 text-left">
         {date && <p className="text-base mb-4">{date}</p>}
         {title && <h1 className="text-[32px] leading-8 font-bold mb-4">{title}</h1>}
 
@@ -66,7 +66,7 @@ const Card = ({
 
   return (
     <div
-      className={clsx("max-w-4xl w-full h-full border-black border-2 rounded-md bg-white", {
+      className={clsx("max-w-4xl w-full border-black border-2 rounded-md bg-white", {
         "hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]": calllToActionLink,
         "shadow-[8px_8px_0px_rgba(0,0,0,1)]": !calllToActionLink,
         "bg-[#F87A73]": variant == "release",
